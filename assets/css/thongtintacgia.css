@@ -1,0 +1,104 @@
+.di-ib {
+  display: inline-block;
+}
+
+.dstruyenst {
+  max-height: 465px;
+  overflow-y: auto;
+}
+
+.container {
+  text-align: center;
+}
+
+.avatar img{
+    border-radius: 50%;
+}
+.thongtintacgia {
+    text-align: left;
+    border-top: 1px solid #ccc;
+    margin-top: 50px;
+}
+
+.thongtintacgia ul {
+  list-style-type: none;
+  font-size: 20px;
+}
+
+.thongtintacgia ul li {
+  padding: 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.thongtint {
+  float: right;
+}
+
+.dstruyenst {
+  background-color: aliceblue;
+  border-radius: 15px;
+  margin-top: 25px;
+  padding: 10px;
+  text-align: left;
+}
+
+.btvdc_section {
+  overflow: hidden;
+  display: inline-block;
+  padding: 20px 10px;
+  background-color: #fff;
+  border-radius: 15px;
+}
+
+.imgtruyen {
+  max-width: 72px;
+  max-height: 96px;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 2px 3px 2px 0 rgba(0, 0, 0, 0.15);
+
+}
+
+.thongtintruyen {
+  overflow: hidden;
+}
+
+.thongtintruyen a {
+  text-decoration: none;
+  color: #000;
+}
+
+.thongtintruyen a:hover {
+  color: #ccc;
+}
+
+.imgtruyen img {
+  width: 100%;
+  height: 100%;
+}
+
+.gioithieutruyen {
+  display: -webkit-box;
+  font-size: 0.875rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 5px;
+  -webkit-line-clamp: 3;
+  color: #666666;
+}
+
+.icontacgia {
+  font-size: 13px;
+}
+
+.theloai {
+  border: 1px solid #ccc;
+  float: right;
+}
+
+.theloai a {
+  color: #a6b3b3;
+  font-size: 12px;
+  padding: 0 8px;
+  line-height: 20px;
+}

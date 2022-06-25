@@ -1,0 +1,165 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="header-footer-home.master.cs" Inherits="Btl_LTW.header_footer_home" %>
+
+<!DOCTYPE html>
+
+<html lang="en">
+<head runat="server">
+    
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./assets/css/index.css" />
+
+    
+    <link rel="stylesheet" href="fontawesome-free-6.1.1-web/css/all.min.css" />
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body >
+    
+        
+        <div class="main">
+      <!-- header -->
+       
+          <div class="header bg-light" id="header">
+            <div class="navbar">
+              <div class="logoweb">
+                <a href="index.aspx">
+                  <img class="logo_logoweb" src="./assets/img/cuoi.png" alt="" />
+                </a>
+              </div>
+              <div class="navbar_nav">
+                
+                <ul class="ulnavbar">
+                  <li>
+                    <a href="#"><i class="fas fa-bars icon_navbar"></i> Thể Loại</a>
+                    <div class="subnav sp_subnav">
+                      <div class="navtheloai">
+                        <div class="dropdown">
+                          <a href="timkiem.aspx?Theloai=Kỳ Ảo">Kỳ Ảo</a>
+                          <a href="timkiem.aspx?Theloai=Tiên Hiệp">Tiên Hiệp</a>
+                          <a href="timkiem.aspx?Theloai=Huyền Huyễn">Huyền Huyễn</a>
+                          <a href="timkiem.aspx?Theloai=Khoa Huyễn">Khoa Huyễn</a>
+                          <a href="timkiem.aspx?Theloai=Võng Du">Võng Du</a>
+                          <a href="timkiem.aspx?Theloai=Đô Thị">Đô Thị</a>
+                        </div>
+                        <div class="dropdown">
+                          <a href="timkiem.aspx?Theloai=Đồng Nhân">Đồng Nhân</a>
+                          <a href="timkiem.aspx?Theloai=Dã Sử">Dã Sử</a>
+                          <a href="timkiem.aspx?Theloai=Cạnh Kỹ">Cạnh Kỹ</a>
+                          <a href="timkiem.aspx?Theloai=Huyền Nghi">Huyền Nghi</a>
+                          <a href="timkiem.aspx?Theloai=Kiếm Hiệp">Kiếm Hiệp</a>
+                          <a href="timkiem.aspx?Theloai=Ngôn Tình">Ngôn Tình</a>
+                        </div>
+                        <div class="dropdown">
+                          <a href="timkiem.aspx?Theloai=Linh Dị">Linh Dị</a>
+                          <a href="timkiem.aspx?Theloai=Hệ Thống">Hệ Thống</a>
+                          <a href="timkiem.aspx?Theloai=Cổ Đại">Cổ Đại</a>
+                          <a href="timkiem.aspx?Theloai=Trinh Thám">Trinh Thám</a>
+                          <a href="timkiem.aspx?Theloai=Quân Sự">Quân Sự</a>
+                          <a href="timkiem.aspx">Tất cả</a>
+                        </div>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <a href="#">Bảng Xếp hạng <i class="fas fa-caret-down"></i></a>
+                    <ul class="subnav">
+                      <li><a href="#">Top lượt đọc</a></li>
+                      <li><a href="#">Top lượt thích</a></li>
+                      <li><a href="#">Top lượt đánh giá</a></li>
+                    </ul>
+                  </li>
+                  <li>
+                    <a href="#">Trạng thái <i class="fas fa-caret-down"></i></a>
+                    <ul class="subnav">
+                      <li><a href="timkiem.aspx?Trangthai=0">Hoàn thành</a></li>
+                      <li><a href="timkiem.aspx?Trangthai=1">Đang ra</a></li>
+                    </ul>
+                  </li>
+                </ul>
+                <form action="timkiem.aspx" id="timkiem" class="inlineblock" method="get">
+                <div class="timkiem">
+                  <div class="thanhtimkiem">
+                
+                      <input
+                        style="border: 1px solid #a6b3b3"
+                        type="text"
+                        id="txtTimkiem"
+                        name="txtTimkiem"
+                        class="txttimkiem"
+                      />
+                      <button id="btnTimkiem" class="btnTimkiem" type="submit">
+                        <i class="fas fa-search"></i>
+                      </button>
+                
+                  </div>
+                </div>
+                </form>
+                  
+                <div class="btnlogin" id="btnlogin" runat="server">
+                    
+                </div>
+              </div>
+                <div class="clear"></div>
+            </div>
+            <div class="menu" id="mobile-menu">
+              <i class="fas fa-bars"></i>
+            </div>
+          </div>
+        
+
+      <!-- endheader -->
+
+      <!-- slider -->
+
+      <a class="slider" href="#"
+        ><img
+          class="imgslider"
+          src="./assets/img/banner.jpg"
+          alt=""
+      /></a>
+
+
+
+      <!-- slider end -->
+      <!-- begin main_container -->
+      <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+      </asp:ContentPlaceHolder>
+      
+      <!-- end main_container -->
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-text">
+          <p>
+            Truyện vui là nền tảng mở dành cho các tác giả và độc giả đam mê
+            truyện chữ, nơi thành viên có thể tự do xuất bản các tác phẩm của
+            mình với nhiều chức năng liên tục được cải tiến sẽ mang lại trải
+            nghiệm tốt nhất cho các tác giả sáng tác truyện lẫn người đọc truyện
+            online.
+          </p>
+        </div>
+
+        <div class="thongtin">
+          <a href="#"><i class="fab fa-facebook"></i> FaceBook</a>
+          <a href="mailto: zzdkaizz@gmail.com"
+            ><i class="fas fa-at"></i>: zzdkaizz@gmail.com</a
+          >
+          <a href="tel:" class="tel"
+            ><i class="fas fa-phone-alt"></i>: +840215426458</a
+          >
+        </div>
+          
+      </div>
+    </div>
+
+    
+
+    <script src="./assets/js/index.js"></script>
+</body>
+    <asp:ContentPlaceHolder ID="ContentScript" runat="server">
+        
+    </asp:ContentPlaceHolder>
+    
+</html>

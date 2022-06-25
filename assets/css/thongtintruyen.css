@@ -1,0 +1,242 @@
+.imgtruyen {
+  width: 210px;
+  height: 280px;
+  box-shadow: 2px 3px 5px 0 rgba(0, 0, 0, 0.25);
+  float: left;
+}
+
+.gioithieutruyen {
+  margin-left: 25px;
+  float: left;
+}
+
+.ttTruyen {
+  overflow: hidden;
+}
+
+.gioithieutruyen ul {
+  list-style-type: none;
+}
+
+.gioithieutruyen .tacgia,
+.gioithieutruyen h2 {
+  margin-bottom: 16px;
+}
+
+.tacgia h3 {
+  display: inline-block;
+  margin-right: 15px;
+  border: 1px solid #ffc000;
+  padding: 0 16px;
+  border-radius: 15px;
+}
+
+.txtthongtin li {
+  display: inline-block;
+  padding-right: 24px;
+  font-size: 20px;
+  margin-right: 48px;
+}
+
+.txtthongtin li .soluong {
+  font-weight: bold;
+  padding-bottom: 10px;
+}
+
+.divdanhgia {
+  padding: 24px 0;
+}
+
+.nh-rating {
+  color: #ffc000;
+  position: relative;
+  display: inline-block;
+}
+.nh-rating .active {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  white-space: nowrap;
+  overflow: hidden;
+  color: #ffc000;
+  max-width: 100%;
+}
+
+.btltttruyen li {
+  display: inline-block;
+  margin-top: 25px;
+
+  
+  margin-right: 25px;
+  cursor:pointer;
+}
+    .btltttruyen li a {
+        text-decoration: none;
+        font-size: 18px;
+        color: #a6b3b3;
+        padding: 12px 40px;
+        border-radius: 25px;
+        border: 1px solid #a6b3b3;
+        background-color: #fff;
+        cursor: pointer;
+    }
+
+
+#btnluutruyen button {
+    
+    background-color: #fff;
+    font-size: 18px;
+    border: 1px solid #a6b3b3;
+    color: #a6b3b3;
+    border-radius: 25px;
+    padding: 12px 26px;
+    cursor: pointer;
+}
+
+.btltttruyen li:hover a,
+.btltttruyen li:hover button {
+  background-color: #a6b3b3 !important;
+  color: #fff !important;
+}
+
+.navtruyen {
+  margin-top: 25px;
+  padding-bottom: 16px;
+}
+
+.navtruyen a{
+    text-decoration: none;
+    color: #000;
+}
+.btnT {
+  font-size: 20px;
+  
+  font-weight: bold;
+  padding: 16px 0;
+  cursor: pointer;
+  margin-right: 35px;
+}
+
+#gioithieuT {
+  color: #a6b3b3;
+  border-bottom: 3px solid #a6b3b3;
+}
+.btnT:hover {
+  color: #a6b3b3 !important;
+}
+
+.bodyttTruyen {
+  padding-top: 25px;
+}
+
+.dvdanhgia {
+    position: relative;
+    height: 250px;
+}
+
+.kengang {
+    border-bottom: 1px dashed #ced9d9;
+    margin: 0.5rem 10px;
+}
+
+.nddanhgia {
+    overflow: hidden;
+    position: absolute;
+    border: 2px solid #a6b3b3;
+    padding: 25px 5px;
+    border-radius: 15px;
+    color: #a6b3b3;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    width: 66%;
+}
+
+.thongtindanhgia {
+    overflow: hidden;
+    position: absolute;
+    border: 2px solid #a6b3b3;
+    padding: 25px 5px;
+    border-radius: 15px;
+    color: #a6b3b3;
+    background: #fff;
+    font-size: 16px;
+    font-weight: 900;
+    width: 33%;
+    right: 0;
+}
+
+.divdiem {
+    margin-bottom: 10px;
+}
+
+.rowdg {
+  margin-bottom: 15px;
+  display: flex;
+}
+
+.js-range-slider {
+  -webkit-appearance: none;
+  height: 0.3rem;
+  width: 100%;
+  border-radius: 0.125rem;
+  background: hsla(180, 8%, 68%, 0.2);
+  outline: 0;
+}
+
+.btn-submit {
+  float: right;
+  margin-right: 20px;
+  padding: 0 20px;
+  border-radius: 15px;
+}
+
+.dvdschuong h2 {
+  display: inline-block;
+}
+
+.dvdschuong .sxdschuong {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 25px;
+}
+
+.dvdschuong .dschuong {
+  display: grid;
+  grid-template-columns: calc(100% / 3) calc(100% / 3) calc(100% / 3);
+}
+
+.dschuong a {
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000;
+  border-bottom: #a6b3b3 dashed 1px;
+}
+
+.dschuong a:hover {
+  color: #a6b3b3;
+}
+
+@media screen and (max-width: 739px) {
+  .imgtruyen {
+    width: 150px;
+  }
+  .gioithieutruyen h2 {
+    display: inline-block;
+  }
+  .gioithieutruyen {
+    margin-left: 0;
+    margin-top: 25px;
+  }
+  .txtthongtin li {
+    margin-right: 1px;
+  }
+  .btnT {
+    margin-right: 10px;
+  }
+  .dvdschuong .dschuong {
+    grid-template-columns: 100%;
+  }
+}

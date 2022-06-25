@@ -1,0 +1,246 @@
+.bodyquanly {
+  padding: 25px 10px;
+  border-top: 1px solid #ccc;
+}
+.bd-l {
+  border-left: 1px solid #ccc;
+  min-height: 1000px;
+}
+
+.nut {
+  font-size: 25px;
+  display: none;
+}
+.thanhmenu li {
+  display: block;
+
+  margin-bottom: 5px;
+  cursor: pointer;
+}
+
+.thanhmenu li a {
+  text-decoration: none;
+  color: #000;
+  font-size: 17px;
+  line-height: 43px;
+  padding: 10px;
+  padding-right: 40px;
+}
+
+.qltruyn {
+  margin-left: 10px;
+  display: none;
+}
+
+.thanhmenu li:hover,
+.qltruyn li {
+  background-color: #ccc;
+}
+.thanhmenu li:hover a {
+  color: #fff;
+}
+.qltruyn li:hover {
+  background-color: rgb(241, 242, 243);
+}
+
+.qltruyn li:hover a {
+  color: #000;
+}
+
+.thanhmenu li:hover .qltruyn {
+  display: block;
+}
+
+/* nav thông tin, bảo mật */
+
+.navbartk ul {
+  list-style-type: none;
+  border-bottom: 1px solid #ccc;
+}
+
+.navbartk li {
+  display: inline-block;
+}
+.navbartk a {
+  text-decoration: none;
+  color: #000;
+  padding: 10px 25px 10px 0;
+  line-height: 38px;
+  font-size: 20px;
+  cursor:pointer;
+}
+
+
+/* div thông tin */
+.khungtttk {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.khungtttk label {
+  line-height: 30px;
+}
+
+.khungtttk .inputtt {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+/* khung bảo mật */
+.khungbaomat {
+  margin-top: 25px;
+  font-size: 18px;
+}
+
+.khungbaomat label {
+  line-height: 30px;
+}
+
+.khungbaomat .inputtt {
+  padding: 5px;
+  margin-left: 15px;
+}
+
+/* dstruyen yêu thích */
+.thongtintruyenyt {
+  margin-top: 25px;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+.dstruyenyt ul {
+  list-style-type: none;
+}
+.thongtintruyenyt .imgtyt {
+  width: 30px;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+.thongt {
+  display: inline-block;
+}
+
+.thongt a {
+  text-decoration: none;
+  color: #000;
+}
+.thongt a:hover {
+  color: #ccc;
+}
+
+.btnxoa {
+  position: absolute;
+  right: 0;
+}
+
+/* quản lí truyện - đăng truyện mới */
+.bodytruyenmoi {
+  background-color: rgb(230, 230, 230);
+  padding: 15px 40px;
+  border-radius: 5px;
+  margin-top: 25px;
+}
+
+.bodytruyenmoi p {
+  margin-top: 10px;
+  color: #222;
+}
+
+.boder-r {
+  border: 1px solid rgba(34, 41, 47, 0.5);
+  border-radius: 5px;
+  width: 100%;
+  padding: 10px;
+}
+
+.bodytruyenmoi input:focus {
+  outline: none;
+  border: 2px solid #7367f0;
+}
+
+#txtgioithieutruyen {
+  width: 100%;
+  border: 1px solid rgba(34, 41, 47, 0.5);
+  border-radius: 5px;
+  resize: none;
+  overflow-y: scroll;
+  height: 290px;
+}
+.btndang {
+  padding: 10px;
+  margin-top: 10px;
+  border-radius: 15px;
+}
+
+/* quản lý truyện - ds truyện */
+
+.dstruyenst td,
+th {
+  padding: 10px 25px 10px 0;
+  border-bottom: 1px solid #ccc;
+}
+
+.dstruyenst a {
+  text-decoration: none;
+  font-weight: bold;
+  color: #222;
+}
+
+.dstruyenst a:hover {
+  color: #ccc;
+}
+
+.btn-dstruyen {
+  font-size: 20px;
+  margin-right: 5px;
+  cursor: pointer;
+  position: relative;
+}
+
+.texttb {
+  border: 1px solid #ccc;
+  background-color: #fff;
+  position: absolute;
+  font-size: 12px;
+  top: 30px;
+  display: none;
+  z-index: 3;
+}
+
+.btn-dstruyen:hover .texttb {
+  display: block;
+}
+
+/* thêm mới chương */
+.ndthemmoi {
+  padding: 10px;
+}
+
+.ndthemmoi p {
+  margin-top: 15px;
+  font-size: 17px;
+}
+
+@media screen and (max-width: 739px) {
+  [class*="col-"] {
+    float: none;
+    padding: 0;
+    width: 100%;
+    margin-top: 25px;
+  }
+  .thanhmenu {
+    display: flex;
+    background-color: #ccc;
+    width: 250px;
+    position: fixed;
+  }
+  .bd-l {
+    border: none;
+  }
+  #btndang {
+    width: 100%;
+  }
+  .nut {
+    display: block;
+  }
+}

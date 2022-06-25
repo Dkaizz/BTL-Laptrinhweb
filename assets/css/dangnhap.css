@@ -1,0 +1,159 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.modal {
+  background-color: rgba(0, 0, 0, 0.4);
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+}
+.vehome{
+    display:none;
+}
+
+.khungbtlshow{
+    margin-bottom:10px;
+}
+
+.txtshowbtn {
+    display: inline-block
+}
+
+.showBtn {
+    
+   
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    display: inline-block;
+}
+
+.model-header a:hover .vehome {
+    display: block !important;
+    border: 1px solid #ccc;
+}
+.home img:hover .vehome {
+    display: block !important;
+    border: 1px solid #ccc;
+}
+
+.model-header {
+  text-align: center;
+  padding: 10px;
+  position: relative;
+}
+
+.model-header button {
+  width: 150px;
+  border: 0;
+  background-color: #00000000;
+  color: #ccc;
+  cursor: pointer;
+}
+
+.model-header button:hover h1 {
+  color: #000 !important;
+}
+
+.modal-container {
+  background-color: #fff;
+  width: 500px;
+  max-width: calc(100% - 32px);
+  min-height: 200px;
+  position: relative;
+  animation: modalFadeIn ease 0.6s;
+  border-radius: 10px;
+}
+
+.modal-close {
+  position: absolute;
+  right: 0;
+  padding: 8px 16px;
+  color: #000;
+  opacity: 0.4;
+  top: 0;
+}
+
+.modal-close:hover {
+  opacity: 1;
+}
+
+.modal-body {
+  padding: 16px;
+}
+
+.modal-label {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 12px;
+}
+
+.modal-input {
+    padding: 8px 5px;
+    width: 100%;
+    border: 1px solid #ccc;
+    margin-bottom: 15px;
+    border-radius: 5px;
+    
+    transition: all 0.3s linear;
+}
+
+.buy-ticks {
+  width: 100%;
+  background-color: #009688;
+  font-size: 15px;
+  padding: 16px;
+  color: #fff;
+  border: none;
+  border-radius: 10px;
+  cursor: pointer;
+}
+
+#buy-ticks:hover {
+  background-color: #ccc;
+  color: #000;
+}
+
+.modal-footer {
+  float: right;
+  padding: 0 16px;
+  margin-bottom: 30px;
+}
+
+@keyframes modalFadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-200px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.open {
+  display: flex !important;
+}
+
+.thongbao {
+  width: 250px;
+  height: 200px;
+  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: #fff;
+  display: flex !important;
+  position: fixed;
+  z-index: 99;
+}
+
+
+.red{
+    color:red;
+}

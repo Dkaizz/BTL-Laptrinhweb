@@ -1,0 +1,287 @@
+.display-ib {
+  display: inline-block;
+}
+
+.thongtintruyen a {
+  text-decoration: none;
+  color: #000;
+}
+
+    .thongtintruyen a:hover {
+        color: #a7a8aa;
+    }
+
+
+
+    .btvdc_header {
+  display: inline-block;
+}
+.btvdc_header h2 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.btvdc_section {
+  overflow: hidden;
+  display: inline-block;
+  padding: 20px 10px;
+  position: relative;
+}
+
+.imgtruyen {
+  max-width: 72px;
+  max-height: 96px;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 2px 3px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.thongtintruyen {
+  overflow: hidden;
+}
+
+    .thongtintruyen h4 {
+        display: -webkit-box;
+        -webkit-box-orient: vertical;
+        overflow: hidden;
+        -webkit-line-clamp: 1;
+    }
+
+.imgtruyen img {
+  width: 72px;
+  height: 96px;
+}
+
+.gioithieutruyen {
+  display: -webkit-box;
+  font-size: 0.875rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 5px;
+  -webkit-line-clamp: 3;
+  color: #666666;
+}
+
+.icontacgia {
+  font-size: 13px;
+}
+
+.theloai {
+    border: 1px solid #ccc;
+    position: absolute;
+    right: 10px;
+    bottom: 15px;
+}
+
+.tacgia {
+    max-width: 125px;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    -webkit-line-clamp: 1;
+}
+
+.theloai a {
+  color: #a6b3b3;
+  font-size: 12px;
+  padding: 0 8px;
+  line-height: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(3,1fr);
+  margin-top: 25px;
+}
+
+.dstruyen {
+  margin-top: 45px;
+}
+
+/* Truyện mới cập nhật */
+.dstruyenmoi {
+  margin-top: 25px;
+  border-top: #a6b3b3 1px solid;
+}
+.dstruyenmoi table {
+  margin: 0 auto;
+}
+.dstruyenmoi td {
+  padding: 0.75rem;
+}
+
+.dstruyenmoi td a {
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+}
+.top a:hover,
+.dstruyenmoi td a:hover {
+  color: #a6b3b3;
+}
+
+.text-overflow-1-lines {
+  display: -webkit-box;
+  -webkit-line-clamp: 1;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  -o-text-overflow: ellipsis;
+  text-overflow: ellipsis;
+}
+
+.tb-color {
+  color: #a6b3b3;
+}
+
+.dstruyenmoi-mobile {
+  display: none;
+  margin-top: 25px;
+}
+
+.tttruyen-mobile {
+  background-color: rgb(255, 254, 245);
+  padding: 10px;
+}
+
+.chuongmoi {
+  float: right;
+  margin-right: 20px;
+}
+
+.dstruyenmoi-mobile ul {
+  list-style-type: none;
+}
+
+.dstruyenmoi-mobile a {
+  text-decoration: none;
+}
+
+.tentruyen-mobile {
+  display: inline-block;
+}
+
+.theloai1 {
+  border: 1px solid #ccc;
+  color: #a6b3b3;
+  margin-left: 15px;
+}
+
+/* truyện đã hoàn thành */
+.grid2 {
+  display: grid;
+  grid-template-columns: calc(100% / 2) calc(100% / 2);
+  margin-top: 25px;
+}
+
+/* rank king */
+
+.rankking {
+  display: block;
+  overflow: hidden;
+  padding: 0 10px;
+}
+
+.rankfull {
+  display: inline-block;
+  margin: 0 auto;
+}
+
+.top {
+  box-shadow: 2px 3px 2px 3px rgba(0, 0, 0, 0.15);
+  padding: 20px;
+  width: 300px;
+  border-radius: 15px;
+  margin: 0 8px;
+}
+.top ul {
+  list-style-type: none;
+  margin-top: 10px;
+}
+
+.top a {
+  text-decoration: none;
+  color: #000;
+}
+
+.top li {
+  padding: 8px;
+}
+
+.item .rank {
+  width: 30px;
+  text-align: center;
+  float: left;
+}
+
+.item .thongtinrank {
+  width: 150px;
+}
+
+.item .luotdoc {
+  float: right;
+}
+
+@media screen and (max-width: 1023px) {
+  .top {
+    box-shadow: none;
+    width: 100%;
+    border-top: 1px solid #ccc;
+    border-radius: 0px;
+  }
+
+  .item .rank {
+    width: 120px;
+  }
+  .item .luotdoc {
+    margin-right: 60px;
+  }
+
+  .rankfull {
+    display: block;
+    width: 700px;
+  }
+
+  .item .thongtinrank {
+    width: 350px;
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .display-none {
+    display: none;
+  }
+
+  .grid {
+    grid-template-columns: 100%;
+  }
+
+  .dstruyenmoi table {
+    display: none;
+  }
+  .dstruyenmoi-mobile {
+    display: block;
+  }
+
+  .item .rank {
+    width: 30px;
+  }
+  .item .luotdoc {
+    margin-right: 10px;
+  }
+
+  .rankfull {
+    display: block;
+    width: 350px;
+  }
+
+  .item .thongtinrank {
+    width: 150px;
+  }
+
+  .grid2 {
+    grid-template-columns: 100%;
+  }
+    .tacgia {
+        max-width: 250px
+    }
+}

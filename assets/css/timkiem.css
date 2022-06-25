@@ -1,0 +1,182 @@
+.display-ib {
+  display: inline-block;
+}
+
+ul {
+  list-style-type: none;
+}
+
+a {
+  text-decoration: none;
+  color: #000;
+}
+
+
+/*menu lựa chọn kiểu sắp xếp*/
+.menuchon {
+    width: 125px;
+    display: inline-block;
+}
+
+    .menuchon li{
+        position:relative;
+    }
+    .menuchon li p {
+        text-align: center;
+        border: 1px solid #ccc;
+        background: #fff;
+        cursor:pointer;
+    }
+.sub_menuchon {
+    display: none;
+    position: absolute;
+    width: 125px;
+}
+.sub_menuchon li {
+    border: 1px solid #ccc;
+}
+    .sub_menuchon button {
+        border: 0;
+        width: 100%;
+        background: rgba(255, 255, 255, 1); 
+        padding: 3px 0;
+        cursor:pointer;
+    }
+
+        .sub_menuchon button:hover {
+            background: rgba(255, 255, 255, 0.35);
+        }
+
+
+/* thể loại */
+.ndtheloai li {
+    padding: 5px;
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: 15px;
+    border: 1px solid salmon;
+    border-radius: 10px;
+}
+.ndtheloai li:hover {
+  background-color: #666666;
+}
+
+.ndtheloai li:hover a {
+  color: #fff;
+}
+
+/* nav tìm kiếm */
+
+.ndtimkiem {
+  border-left: 1px solid #a6b3b3;
+}
+.navtimkiem li {
+  padding: 5px 25px 5px 0;
+  display: inline-block;
+  font-size: 18px;
+}
+
+.navtimkiem li:hover a {
+  color: #a6b3b3;
+}
+
+/* nd tìm kiếm */
+.ketquatimkiem {
+  margin-top: 25px;
+}
+.ketquatimkiem h3 {
+  display: inline-block;
+}
+
+.sxdstruyen {
+  margin-top: 25px;
+}
+
+.sxdstruyen a:hover {
+  color: #a6b3b3;
+}
+
+.thongtintruyen a {
+  text-decoration: none;
+  color: #000;
+}
+
+.btvdc_header {
+  display: inline-block;
+}
+.btvdc_header h2 {
+  font-weight: 600;
+  line-height: 1.2;
+}
+
+.btvdc_section {
+  overflow: hidden;
+  display: inline-block;
+  padding: 20px 10px;
+}
+
+.imgtruyen {
+  max-width: 72px;
+  max-height: 96px;
+  float: left;
+  margin-right: 15px;
+  box-shadow: 2px 3px 2px 0 rgba(0, 0, 0, 0.15);
+}
+
+.thongtintruyen {
+  overflow: hidden;
+}
+
+.imgtruyen img {
+  width: 100%;
+  height: 100%;
+}
+
+.gioithieutruyen {
+  display: -webkit-box;
+  font-size: 0.875rem;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  margin-top: 5px;
+  -webkit-line-clamp: 3;
+  color: #666666;
+}
+
+.icontacgia {
+  font-size: 13px;
+}
+
+.theloai {
+  border: 1px solid #ccc;
+  float: right;
+}
+
+.theloai a {
+  color: #a6b3b3;
+  font-size: 12px;
+  padding: 0 8px;
+  line-height: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-top: 25px;
+}
+
+.dstruyen {
+  margin-top: 45px;
+}
+
+@media screen and (max-width: 739px) {
+  .cactheloai {
+    display: none;
+  }
+  .ndtimkiem {
+    border-left: 0;
+    width: 100%;
+  }
+  .grid {
+    grid-template-columns: 100%;
+  }
+}

@@ -1,0 +1,235 @@
+.truyen {
+  background-color: #ccc;
+  min-height: 300px;
+  padding: 25px 0;
+  position: relative;
+}
+
+.float-left {
+  float: left;
+}
+
+.ndtruyen {
+  width: 1024px;
+  max-width: 100%;
+  background-color: #e1e8e8;
+  min-height: 300px;
+  margin: 0 auto;
+  border-radius: 15px;
+  padding: 25px 50px;
+}
+.btntruyen {
+  margin: 25px 0;
+}
+
+.btnchuyenchuong {
+  border: 1px solid rgb(223, 222, 222);
+  background-color: rgb(223, 222, 222);
+  border-radius: 25px;
+  cursor: pointer;
+  text-decoration:none;
+  padding: 10px 25px;
+  font-size: 25px;
+}
+.btnchuyenchuong:hover {
+  opacity: 0.4;
+}
+.tienchuong {
+  float: right;
+}
+
+.tenchuong {
+  padding-top: 15px;
+}
+
+ul {
+  list-style-type: none;
+}
+
+.thongtinchuong {
+  padding: 15px 0;
+}
+
+.thongtinchuong li {
+  display: inline-block;
+}
+
+.thongtinchuong li a {
+  text-decoration: none;
+  color: #000;
+}
+
+.thongtinchuong li a:hover {
+  color: #ccc;
+}
+
+.thongtinchuong li .icontt {
+  padding-right: 10px;
+}
+
+.ndchuong {
+  font-size: 26px;
+  font-family: "Palatino Linotype", sans-serif;
+}
+
+.menutruyen {
+  background-color: #e1e8e8;
+  margin: 25px auto;
+  max-width: 1024px;
+  text-align: center;
+  border-radius: 15px;
+  z-index: 20;
+}
+
+.menutruyen i {
+  line-height: 50px;
+  font-size: 24px;
+}
+
+.menutruyen li {
+  display: inline-block;
+  padding: 0 25px;
+}
+
+.menutruyen li button {
+  border: 0;
+  background-color: #00000000;
+  cursor: pointer;
+}
+
+.menu-item-close {
+  display: inline-block;
+  position: absolute;
+  top: 0px;
+  right: 20px;
+  opacity: 0.6;
+  cursor: pointer;
+  z-index: 5;
+}
+
+.menu-item-close:hover {
+  opacity: 1;
+}
+
+#dschuong {
+  position: relative;
+}
+.dvdschuong {
+  background-color: #fff;
+  position: absolute;
+  z-index: 4;
+}
+
+.nddschuong {
+  padding: 1.5rem;
+
+  min-width: 500px;
+  max-height: 500px;
+  overflow-y: auto;
+}
+
+.dvdschuong h2 {
+  display: inline-block;
+}
+
+.dvdschuong .sxdschuong {
+  display: inline-block;
+  font-size: 20px;
+  padding: 0 25px;
+}
+
+.dvdschuong .dschuong {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  margin-bottom: 25px;
+}
+
+.dschuong a {
+  padding: 10px 25px;
+  text-decoration: none;
+  font-size: 17px;
+  color: #000;
+  border-bottom: #a6b3b3 dashed 1px;
+}
+
+.dschuong a:hover {
+  color: #a6b3b3;
+}
+
+.setting {
+  background-color: #fff;
+  position: absolute;
+  padding: 10px;
+  padding-top: 30px;
+  display: none;
+}
+
+.setting li {
+  padding-right: 25px;
+}
+.item {
+  border: 1px solid #a6b3b3;
+  display: block;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+}
+
+.item1 {
+  background-color: rgb(155, 155, 155);
+}
+
+.item2 {
+  background-color: #eae0c3;
+}
+.item3 {
+  background-color: #111;
+}
+
+.custom-select {
+  padding: 6px 12px;
+}
+
+.font-size {
+  line-height: 50px;
+}
+
+html {
+  background-color: #000;
+}
+
+body {
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
+
+@media screen and (max-width: 1023px) {
+  .custom-select {
+    padding: 6px 6px;
+  }
+  .btnchuyenchuong {
+    padding: 0;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 739px) {
+  .custom-select {
+    padding: 5px 6px;
+  }
+
+  .nddschuong {
+    padding: 1.5rem;
+
+    min-width: 300px;
+    max-height: 500px;
+    overflow-y: auto;
+  }
+  .dvdschuong .dschuong {
+    grid-template-columns: 100%;
+  }
+}

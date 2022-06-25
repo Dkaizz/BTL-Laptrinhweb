@@ -1,0 +1,807 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Đọc truyện</title>
+    <link rel="stylesheet" href="./assets/css/index.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+    />
+    <link rel="stylesheet" href="./assets/css/doctruyen.css" />
+  </head>
+  <body>
+    <div class="main">
+      <!-- header -->
+      <div class="header bg-light" id="header">
+        <div class="navbar">
+          <div class="logoweb">
+            <a href="#">
+              <img class="logo_logoweb" src="./assets/img/cuoi.png" alt="" />
+            </a>
+          </div>
+          <div class="navbar_nav">
+            <ul class="ulnavbar">
+              <li>
+                <a href="#"><i class="fas fa-bars icon_navbar"></i> Thể Loại</a>
+                <div class="subnav sp_subnav">
+                  <div class="navtheloai">
+                    <div class="dropdown">
+                      <a>Tiên Hiệp</a>
+                      <a>Kiếm Hiệp</a>
+                      <a>Ngôn Tình</a>
+                      <a>Đô Thị</a>
+                      <a>Quan Trường</a>
+                      <a>Võng Du</a>
+                      <a>Khoa Huyễn</a>
+                      <a>Hệ Thống</a>
+                      <a>Huyền Huyễn</a>
+                      <a>Dị Giới</a>
+                      <a>Dị Năng</a>
+                      <a>Quân Sự</a>
+                      <a>Lịch Sử</a>
+                    </div>
+                    <div class="dropdown">
+                      <a>Xuyên Không</a>
+                      <a>Xuyên Nhanh</a>
+                      <a>Trọng Sinh</a>
+                      <a>Trinh Thám</a>
+                      <a>Thám Hiểm</a>
+                      <a>Linh Dị</a>
+                      <a>Sắc</a>
+                      <a>Ngược</a>
+                      <a>Sủng</a>
+                      <a>Cung Đấu</a>
+                      <a>Nữ Cường</a>
+                      <a>Gia Đấu</a>
+                      <a>Đông Phương</a>
+                    </div>
+                    <div class="dropdown">
+                      <a>Đam Mỹ</a>
+                      <a>Bách Hợp</a>
+                      <a>Hài Ước</a>
+                      <a>Điền Văn</a>
+                      <a>Cổ Đại</a>
+                      <a>Mạt Thế</a>
+                      <a>Truyện Teen</a>
+                      <a>Phương Tây</a>
+                      <a>Nữ Phụ</a>
+                      <a>Light Novel</a>
+                      <a>Việt Nam</a>
+                      <a>Đoản Văn</a>
+                      <a href="">Tất cả</a>
+                    </div>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <a href="#">Bảng Xếp hạng <i class="fas fa-caret-down"></i></a>
+                <ul class="subnav">
+                  <li><a href="#">Top lượt đọc</a></li>
+                  <li><a href="#">Top lượt thích</a></li>
+                  <li><a href="#">Top lượt đánh giá</a></li>
+                </ul>
+              </li>
+              <li>
+                <a href="#">Trạng thái <i class="fas fa-caret-down"></i></a>
+                <ul class="subnav">
+                  <li><a href="#">Hoàn thành</a></li>
+                  <li><a href="#">Đang ra</a></li>
+                </ul>
+              </li>
+            </ul>
+
+            <div class="timkiem">
+              <div class="thanhtimkiem">
+                <form action="" class="formtimkiem">
+                  <input
+                    style="border: 1 solid #a6b3b3"
+                    type="text"
+                    id="txtTimkiem"
+                    name="txtTimkiem"
+                    class="txttimkiem"
+                  />
+                  <button id="btnTimkiem" class="btnTimkiem">
+                    <i class="fas fa-search"></i>
+                  </button>
+                </form>
+              </div>
+            </div>
+
+            <div class="btnlogin">
+              <button class="js-dangnhap">Đăng nhập</button>
+              <button class="js-dangky">Đăng ký</button>
+            </div>
+          </div>
+        </div>
+        <div class="menu" id="mobile-menu">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+
+      <!-- endheader -->
+
+      <!-- begin main_container -->
+      <div class="truyen">
+        <div class="menutruyen">
+          <ul>
+            <li id="dschuong">
+              <button href="#" id="btndschuong">
+                <i class="fas fa-bars"></i>
+              </button>
+              <div class="dvdschuong" style="display: none">
+                <div class="menu-item-close js-close-dsc">
+                  <i class="fas fa-times"></i>
+                </div>
+                <div class="nddschuong">
+                  <div class="hdschuong">
+                    <h2>Danh sách chương</h2>
+                    <div class="sxdschuong">
+                      <i class="fas fa-sort-amount-up-alt sx-icon1"></i>
+                      <i
+                        class="fas fa-sort-amount-up sx-icon2"
+                        style="display: none"
+                      ></i>
+                    </div>
+                  </div>
+                  <div class="dschuong">
+                    <a href="#">Chương 1: Lãng tử quay đầu</a>
+                    <a href="#">Chương 2: Lãng tử quay đầu</a>
+                    <a href="#">Chương 3: Lãng tử quay đầu</a>
+                    <a href="#">Chương 4: Lãng tử quay đầu</a>
+                    <a href="#">Chương 5: Lãng tử quay đầu</a>
+                    <a href="#">Chương 6: Lãng tử quay đầu</a>
+                    <a href="#">Chương 7: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                    <a href="#">Chương 8: Lãng tử quay đầu</a>
+                  </div>
+                </div>
+              </div>
+            </li>
+            <li id="setting">
+              <button href="#" id="btnsetting">
+                <i class="fas fa-cog"></i>
+              </button>
+              <div class="setting">
+                <div class="menu-item-close js-close-setting">
+                  <i class="fas fa-times"></i>
+                </div>
+                <table>
+                  <tr>
+                    <td><i class="fas fa-palette"></i> Màu nền</td>
+                    <td>
+                      <ul>
+                        <li><a href="#" class="item1 item"></a></li>
+                        <li><a href="#" class="item2 item"></a></li>
+                        <li><a href="#" class="item3 item"></a></li>
+                        <li><a href="#" class="item4 item"></a></li>
+                      </ul>
+                    </td>
+                  </tr>
+
+                  <tr>
+                    <td><i class="fas fa-font"></i> Font chữ</td>
+                    <td>
+                      <select id="js-font-chu" class="custom-select">
+                        <option value="'Palatino Linotype', sans-serif">
+                          Palatino Linotype
+                        </option>
+                        <option value="'Source Sans Pro', sans-serif">
+                          Source Sans Pro
+                        </option>
+                        <option value="'Segoe UI', sans-serif">Segoe UI</option>
+                        <option value="Roboto, sans-serif">Roboto</option>
+                        <option value="'Patrick Hand', sans-serif">
+                          Patrick Hand
+                        </option>
+                        <option value="'Noticia Text', sans-serif">
+                          Noticia Text
+                        </option>
+                        <option value="'Times New Roman', sans-serif">
+                          Times New Roman
+                        </option>
+                        <option value="Verdana, sans-serif">Verdana</option>
+                        <option value="Tahoma, sans-serif">Tahoma</option>
+                        <option value="Arial, sans-serif">Arial</option>
+                      </select>
+                    </td>
+                  </tr>
+                  <tr>
+                    <td><i class="fas fa-text-height"></i> Cỡ chữ</td>
+                    <td>
+                      <div
+                        data-unit="px"
+                        data-type="font-size"
+                        data-max="30"
+                        data-min="14"
+                        data-step="1"
+                        class="setting-font-size"
+                      >
+                        <button class="btn btngiam col-3">
+                          <i class="fas fa-minus-circle"></i>
+                        </button>
+                        <div class="font-size col-6">26px</div>
+                        <button class="btn btntang col-3">
+                          <i class="fas fa-plus-circle"></i>
+                        </button>
+                        <div class="clear" style="clear: both"></div>
+                      </div>
+                    </td>
+                  </tr>
+                </table>
+              </div>
+            </li>
+            <li>
+              <button href=""><i class="fas fa-arrow-left"></i></button>
+            </li>
+            <li>
+              <button href=""><i class="fas fa-home"></i></button>
+            </li>
+          </ul>
+        </div>
+        <div class="ndtruyen">
+          <div class="btntruyen">
+            <a class="btnchuyenchuong luichuong"
+              ><i class="fas fa-arrow-left"></i> Chương trước </a
+            ><a class="btnchuyenchuong tienchuong">
+              Chương sau <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+          <div class="tenchuong">
+            <h2>Chương 1: Lãng xẹt xuyên qua</h2>
+          </div>
+          <div class="thongtinchuong">
+            <ul>
+              <li>
+                <a id="tentruyen" href="#"
+                  ><i class="fas fa-book icontt"></i>Tên truyện
+                </a>
+              </li>
+              <li><i class="fas fa-marker icontt"></i>Tên tác giả</li>
+              <li id="sochu">
+                <i class="fas fa-book-open icontt"></i>4500 chữ
+              </li>
+              <li><i class="far fa-clock icontt"></i>Ngày đăng</li>
+            </ul>
+          </div>
+          <div class="ndchuong">
+            ....<br /><br />Thiên Nam đại lục, ở Đông Đại lục, vùng gần rìa phía
+            ngoài cánh rừng Thiên Sơn có một thanh niên quần áo rách rưới, đang
+            nằm bất tỉnh nhân sự. Người này không ngoài ai khác chính là nhân
+            vật chính của chúng ta, người bị nổ qua thế giới này, Chử Thiên
+            Long.<br /><br />Xung quanh là rừng cây rậm rạp, Long nằm hôn mê ở
+            dưới đất, ở phía trên là một khoảng không, với một bầu trời xanh
+            ngát. Cách đó không xa, trong một bụi cây rậm rạp đang loạt soạt
+            loạt soạt, từ từ nó ra một con Gấu yêu cao 2,5m vết thương khắp
+            người, trông có vẻ đang đói, đang bước ra từ trong bụi cây. Gấu yêu
+            mũi rất thính, nó theo mùi của loài người mà lần đến đây, bước ra
+            bụi cây hướng về phía Long nằm bất tỉnh ở trước mặt thì từ từ bước
+            lại gần.<br /><br />Đến gần Long, Gấu yêu nước nhãi trào ra khỏi
+            miệng, nó đã không được ăn thịt mấy ngày nay rồi. Con Gấu yêu này là
+            con trùm khu này trong bán kính 1km, nhưng mới vài ngày trước một
+            con gấu yêu khác đến giành địa bàn của nó, hai con quyết chiến nhưng
+            nó thua, đành mang theo mình đầy thương tích rời khỏi địa bàn. Thế
+            nên nó đã đi lang thang tìm địa bàn mới, với vết thương khắp cơ thể
+            khiến nó hoạt động khó khăn lên mấy ngày rồi chưa ăn được thịt. Ngửi
+            thấy mùi loài người nó lập tức hướng qua đây.<br /><br />Gấu yêu
+            đang định cúi xuống xé xác Long ra, đột nhiên từ trong rừng cây cách
+            đó không xa bước ra một con Sói yêu đang bước lại gần đến trước mặt
+            nó. Nó thấy vậy “gầm” một tiếng báo hiệu, đây là con mồi của nó.<br /><br />Sói
+            yêu ngửi theo mùi mùi máu tươi mà lần đến đây, không ngờ nó lại thấy
+            thêm thành quả ngoài ý muốn. Tưởng săn được một con mồi bị thương,
+            không ngờ còn kèm thêm một cục "thịt" chờ sẵn để nó ăn nữa. Nó nhìn
+            về phía Gấu yêu, thấy Gấu yêu mình đầy thương tích, nó cũng không
+            sợ, chân tiến lên trước, nhe ra răng nanh "gầm" lại, ý muốn bảo “đây
+            là thức ăn của tao”. Nó cũng chuẩn bị tư thế tấn công luôn<br /><br />Nhìn
+            thấy Sói yêu hung hăng vậy, dành ngay con mồi sắp đến miệng của
+            mình, Gấu yêu làm sao nhẫn lại được, lập tức tức giận "gầm" lên một
+            tiếng, dùng tay gấu đập mạnh về phía Sói yêu.<br /><br />Sói yêu đã
+            chuẩn bị từ trước nên né nhanh được ngay cú tấn công bất ngờ của Gấu
+            yêu, nó cũng không chịu yếu thế, né được chiêu tấn công của Gấu yêu
+            là lao lên phản công ngay. Nó đâm thẳng vào người gấu yêu, do có
+            thương đầy người với sự tấn công bất chợt Gấu yêu không đứng vững
+            được bị nó đẩy thẳng xuống đất. Sói yêu với hàm răng nhọn ngoạm ngay
+            một miếng vô thân gấu.<br /><br />Bị cắn Gấu yêu đau "gầm" lên, tức
+            giận tát một phát trúng thân của Sói yêu, khiến Sói yêu bị bay ra
+            chục mét đập thẳng vào thân cây hộc máu. Sói yêu không nghĩ tới Gấu
+            yêu vẫn còn mạnh như vậy, cảm thấy không đánh lại được, Sói yêu nhìn
+            về phía Long với vẻ mặt tiếc nuối sau đó liền xoay thân bỏ chạy.
+            Thấy kẻ vừa tấn công mình chạy, Gấu yêu làm sao chịu buông tha, tức
+            giận gầm lên vội vàng đuổi theo Sói yêu. Cả hai con một chạy một
+            đuổi lao nhanh vào rừng cây, bỏ lại Long tiếp tục ngất nằm ở trên
+            đất.<br /><br />Tiếng động đánh nhau của hai con yêu thú lớn vậy mà
+            Long vẫn nằm bất tỉnh. Sau khi hai con yêu thú đi được một lúc lâu,
+            khu rừng cũng không còn động tĩnh. Trên bầu trời một con Chim yêu
+            nhỏ, có màu sắc sặc sỡ bay ngang qua, khi nó bay ngang đến trên đỉnh
+            đầu Long không nhịn được thả “shit” rơi xuống. Cục trắng trắng nhỏ
+            xinh được bao quanh bởi linh khí cứ thế từ trên không chạm dãi chậm
+            rãi rơi xuống.<br /><br />“bộp”<br /><br />Cục “shit” rơi ngay đúng
+            trên mặt, linh khí bao quanh cục “shit” thấm dần vào cơ thể Long.
+            Cảm nhận được một luồng khí bé nhỏ tươi mát nhập vào cơ thể, chẳng
+            bao lâu Chử Thiên Long dần dần tỉnh lại. Hắn mơ màng tỉnh lại chỉ
+            cảm thấy cả người ê ẩm mất hết sức lực, ánh mắt dần dần có hồn, hắn
+            ngơ ngơ ngác ngác nhìn xung quanh cảm thấy quang cảnh lạ lạ.<br /><br />Long
+            đột nhiên giật mình, tỉnh táo thần chí, hoảng hốt nhìn lại xung
+            quanh lấy tay véo lên mặt mình. Thấy đau Long cảm giác không thể tin
+            được, nói ra:<br /><br />- What??? Ta không phải bị nổ chết rồi sao,
+            sao ta vẫn còn sống!<br /><br />Chử Thiên Long một mặt hồ nghi, tay
+            thì sờ soạng kiểm tra cơ thể mình xem có chỗ nào không đúng, nghĩ
+            đến cái gì hắn vội vạch quần nhòm xuống.<br />
+
+            <br />- Phù! May tiểu đệ đệ còn nguyên. An tâm, an tâm!<br /><br />Chính
+            sự đã xong, lúc này hắn mới kịp ngớ ra, lạ lẫm nhìn quang cảnh chung
+            quanh mình, một mặt hồ nghi nói:<br /><br />- Quái lạ! Đây có thể là
+            đâu? Sao ta lại đến nơi đây? Trông chỗ này nhìn có vẻ không giống
+            như ở Việt Nam cho lắm!<br /><br />Chử Thiên Long đứng dậy, lần nữa
+            đánh giá xung quanh 1 lượt mới ngẩn người run sợ kết luận nói ra:<br /><br />-
+            Mé!!!!! Chẳng lẽ... Ta... Gặp phải trong truyền thuyết các đạo hữu
+            trên mạng từng nói.... "Xuyên qua" rồi!<br /><br />Chử Thiên Long là
+            một sinh viên năm nhất Đại học y, nhà hắn chỉ có một mình, bố mẹ hắn
+            đã qua đời trong một vụ tai nạn giao thông năm hắn 17 tuổi. Nên cuộc
+            sống của hắn rất tự lập, với khối tài sản kếch xù mà bố mẹ để lại
+            cuộc sống của hắn cũng khá nhẹ nhàng, chỉ phải đi học với sinh hoạt
+            cá nhân, bởi vậy hắn cũng khá trưởng thành sớm. Cũng vì tính cách
+            hơi nhát gái lên tới bây giờ vẫn chưa một mảnh tình vắt vai, cũng vì
+            vậy mà cũng chưa dám thổ lộ với My người bạn thân chơi từ bé đến lớn
+            với hắn. Do vậy khi bị nổ hắn cũng không cam tâm nhiều và rất nhanh
+            tiếp nhận sự thật mình đã bị xuyên việt rồi, nhưng trong lòng còn
+            không cam tâm với My, nếu có cơ hội trở về hắn sẽ xem My.<br /><br />Long
+            bắt đầu kiểm tra lại tình trạng cơ thể mình một lần nữa, cũng may
+            chỉ có quần áo cháy xém với rách đi vài chỗ, còn không có một vết
+            thương nào trên cơ thể, thấy thế hắn cũng kì kì, nghĩ: “Quái lạ, sao
+            ta bị nổ trực tiếp như vậy mà người ta lại không sao nhỉ?”<br /><br />Nghi
+            vấn thì nghi vấn nhưng hắn cũng nhanh chóng bỏ ngay ra sau đầu. Tiếp
+            tục xem xét cơ thể, khi tay sờ lên mặt, hắn sờ thấy cái gì ẩm ẩm
+            nhầy nhụa, đưa lên mũi ngửi thì hít ngay một mùi đặc trưng của
+            “shit” chim ôi sao mà thơm ngát. Mặt hắn nhăn lại, vội tay bỏ ra
+            khỏi mũi quệt luôn lên thân cây, tức giận hét lớn:<br /><br />- Mẹ
+            nó!!! Con chim chó chết nào ỉa lên mặt bố mày! Con mất dạy!! Để tao
+            mà gặp lại lần nữa thì cho mày lên nồi!!”<br /><br />Chuyện “shit”
+            gác qua một bên Long tâm trạng điều chỉnh về bình thường hắn bắt đầu
+            hứng thú đánh giá nơi mình bị “xuyên” đến. Xung quanh Long là những
+            cây cao tầm 20m đến 200m, nếu là trên đất không thể có khu rừng nào
+            có nhiều cây to thế được, mà lại không khí ở đây rất trong lành,
+            tươi mát tràn đầy sức sống. Đây cũng là một lý do vì sao chỉ nhìn
+            xung quanh một lượt mà hắn đã khẳng định ngay là mình xuyên qua.<br /><br />Chử
+            Thiên Long bắt đầu tìm tòi trong trí nhớ của mình về những truyện mà
+            hắn đã đọc để biết thêm kiến thức về "xuyên việt". "Truyện ta từng
+            đọc nào là xuyên qua là có hệ thống buff cho mạnh lên, không thì có
+            công pháp, bí tịch thượng thừa tu luyện, hoặc đại năng truyền thừa,
+            hoặc thần khí ở trong người. Nếu mà đúng như trong truyện viết thì
+            chọn cái nào cũng được,nó đều đi đến nhân sinh đỉnh phong". Hắn càng
+            nghĩ thì mặt mày hắn càng càng xán lạn, càng vui vẻ nói:<br /><br />-
+            Ta nếu đã không chết mà bị xuyên qua, cuộc đời còn lại này ta nhất
+            định phải phấn đấu không phụ sự kỳ vọng của bố mẹ đã phù hộ ta!<br /><br />Chử
+            Thiên Long nắm chặt tay mình thể hiện sự quyết tâm. Nhưng cứ nghĩ
+            đến các nhân vật chính mà trong truyện viết thì hắn không nhịn được
+            bộc lộ cảm giác sung sướng.<br /><br />“Nếu những điều trong những
+            truyện mà ta đọc đều là thật thì ta vào đúng cái nào cũng được, thì
+            cái nào ta cũng sẽ đứng trên đỉnh phong thế giới, cưới mỹ nữ thiên
+            hạ. Nhất định phải làm quang tông diệu tổ, phải làm cho gia tộc khai
+            chi tán diệp trên khắp thế giới này! Ha ha... Ha ha ha... ” - Long
+            vừa nghĩ vừa cười to với một khuôn mặt hèn mọn cực kỳ.<br />
+
+            <br />Dựa theo truyện nhân vật chính khi xuyên việt thường có đạo cụ
+            "đi kèm", Long nghĩ đến vậy bèn vội mò lại cơ thể 1 lần nhưng cái gì
+            cũng không có, cơ thể đã không có Long tiếp tục tìm xung quanh xem
+            có vật gì hoa gì, quả gì không, nhưng cái gì cũng không có. Xung
+            quanh chỉ có cây là cây có vài bụi cỏ cao Long cũng tìm một lần
+            nhưng cũng như cũ không có. Hắn chán nản từ bỏ tìm kiếm, ngồi bệt
+            xuống đất với khuôn mặt ỉu xìu, mặt cau có nói:<br /><br />- Mé!
+            Chẳng lẽ truyện là toàn gạt người! Không nên! Không nên! Không nên!
+            Ta chắc chắn là nhân vật chính!<br /><br />Lấy lại tinh thần, Long
+            đứng dậy.<br /><br />- Không được! Phải tìm lại lần nữa nhất định sẽ
+            có<br /><br />Long bắt đầu tìm kiếm một vòng nữa, qua nửa giờ hắn đã
+            tìm hai, ba vòng rồi cũng chẳng thấy gì. Hắn chỉ đành buông bỏ, ngồi
+            dưới gốc cây nghỉ ngơi lấy sức.<br /><br />Chử Thiên Long tâm trạng
+            lúc này chán nản, hắn bắt đầu lại thấy hơi lo lắng cho tương lai của
+            mình.<br /><br />- Đó là nếu giống như trong truyện, nhưng ta chưa
+            chắc gì đã như truyện, đây là sự thực không phải ảo tưởng! Nếu đã
+            vậy! Ta lên suy tính cho tính cho tương lai trước đã.<br /><br />Long
+            đứng dậy, vỗ vỗ mặt mình, lấy lại tinh thần chuẩn bị rời khỏi khu
+            rừng.<br /><br />-Trước tiên phải đi tìm cái ăn, sau đi tìm lối ra,
+            còn phải đi tìm người hỏi để còn biết ta đã xuyên không đến đâu.<br /><br />Chử
+            Thiên Long nhìn lên bầu trời, thấy mặt trời đã lên đến đỉnh thầm
+            nghĩ “Thời gian đúng là không đợi người mà! Mới đó giờ đã sắp trưa,
+            phải đi ngay thôi kẻo đêm tối trong rừng nguy hiểm”<br /><br />Chuẩn
+            bị đi nhưng hoàn cảnh lại không cho Long khởi hành suôn sẻ như vậy.
+            Một tiếng kêu "éc" sợ hãi từ đằng xa vọng lại, Long quay mặt nhìn về
+            phía phát ra âm thanh thì thấy một con trông giống lợn rừng nhưng
+            kích thước thì to gấp 5 lần với cặp nanh dài như ngà voi đang sợ hãi
+            lao về phía Long, mà phía sau nó là một con mãng xà đang đuổi
+            theo.<br /><br />- Mé! Thật xui xẻo! Vừa mới xuyên qua, cơ duyên thì
+            méo thấy đâu, nguy hiểm thì có thừa thế này!<br /><br />"Gặp phải
+            cảnh này chắc ta phải là thằng thảm nhất xuyên không rồi!” - Vừa
+            mừng vừa sợ Long trong lòng thầm oán.<br /><br />Không chần chừ Long
+            vội vàng quay người chạy, chạy một mạch liên tục về phía trước. Vì
+            do không biết phương hướng nên Long càng chạy thì càng vào sâu trong
+            rừng. Chạy được một lúc lâu Long thở không ra hơi mới ngừng lại để
+            thở, ngoảnh mặt ra sau thì không thấy có cái gì ở sau nữa thì mới
+            kịp thở ra hơi, Long thở gấp nói:<br />
+
+            <br />- Phù... Con mé nó! Còn chưa chết! May nhờ thường ngày ông đây
+            chăm tập thể dục không hôm nay có khả năng bị lợn lu về với đất mẹ
+            rồi.<br /><br />Nghĩ đến cảnh bị lợn đuổi, Long thốt câu chửi
+            bậy.<br /><br />-Con mẹ! Lợn rừng gì mà to vậy! Mẹ nó! To gấp 5 lợn
+            thường!<br /><br />Lại nghĩ đến con lợn to như vậy mà vẫn bị rắn
+            đuổi, Long run nhẹ nổi cả hết da gà vì sợ thầm nhủ:<br /><br />-Đã
+            thế con rắn còn to quá đáng nữa! To gấp 3 con lợn. Không biết mình
+            xuyên qua thế giới gì mà toàn “quái vật” nguy hiểm vậy nữa. May mà
+            còn sống!<br /><br />Sống sót sau tai nạn, Long trấn tĩnh lại, bắt
+            đầu đánh giá xung quanh xem mình đã chạy về đâu. Nhưng mà xung quanh
+            cũng chỉ có toàn cây là cây, bên trên cũng bị cây che khuất không
+            nhìn thấy bầu trời làm cho không thể xác định được thời gian. Xem
+            xét chẳng biết mình đã chạy đến đâu, Long đành tùy tiện tìm một
+            đường rồi đi tiếp.<br /><br />Rừng cây không có ánh nắng chiếu xuống
+            nên trông hơi tối, Long đi cẩn thận, vừa đi vừa quan sát trung
+            quanh, xem có động tĩnh gì hay “quái vật” hoặc có cái gì ăn cho lót
+            dạ.<br /><br />Đi được một quãng Long nhìn thấy phía không xa có một
+            bụi cây, mà trên bụi cây lại có quả, quả đỏ mọng nước khá giống trái
+            goji. Đang đói hắn không cần nghĩ ngợi gì nhiều, quan sát xung quanh
+            không có nguy hiểm Long liền từ từ bước lại gần. Hắn vặt quả trên
+            bụi cây, cần nó lên ngắm ngắm, nghía nghía, tay phải vuốt vuốt cằm
+            trầm tư đánh giá:<br /><br />- Quả màu đỏ lại mọng nước chứng tỏ quả
+            đã chín, mà với mớ kiến thức mà ta đã học được nhìn lại xem xét thì
+            quả này khá là giống mấy trái trong thuốc Bắc, vậy chắc khả năng cao
+            sẽ không có độc. Mà nếu có độc thì chắc ăn một quả thử cũng không
+            sao.<br /><br />Thế là không chần chừ nữa, Long bỏ ngay vào mồm nhai
+            thử một quả, cắn một phát nước trong quả trào ra khoang miệng, mới
+            đầu thì cảm giác hơi chua chua nhưng một lúc về sau vị chua qua đi
+            vị ngọt chào dâng lên hết cả miệng, nó mang đến cảm giác khoan khoái
+            khi ăn.<br /><br />Ăn xong một quả, Long cảm thấy ngon hết ý, nhưng
+            định nếm thử đến trái thứ 2 thì hắn đột nhiên cảm thấy cả người tê
+            cứng dần, lúc này thì mới hiểu trái hắn ăn có độc, Long chỉ có thầm
+            oán than:<br /><br />-Mẹ nó! Sao lại đen thế chứ! Quả này thế mà có
+            độc thật! Đù mé nó!<br /><br />Long dần dần mất đi ý thức, nằm gục
+            xuống đất.<br /><br />
+          </div>
+          <div class="btntruyen">
+            <a class="btnchuyenchuong luichuong"
+              ><i class="fas fa-arrow-left"></i> Chương trước </a
+            ><a class="btnchuyenchuong tienchuong">
+              Chương sau <i class="fas fa-arrow-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <!-- end main_container -->
+
+      <!-- footer -->
+      <div class="footer">
+        <div class="footer-text">
+          <p>
+            Truyện vui là nền tảng mở dành cho các tác giả và độc giả đam mê
+            truyện chữ, nơi thành viên có thể tự do xuất bản các tác phẩm của
+            mình với nhiều chức năng liên tục được cải tiến sẽ mang lại trải
+            nghiệm tốt nhất cho các tác giả sáng tác truyện lẫn người đọc truyện
+            online.
+          </p>
+        </div>
+
+        <div class="thongtin">
+          <a href=""><i class="fab fa-facebook"></i> FaceBook</a>
+          <a href="mailto: zzdkaizz@gmail.com"
+            ><i class="fas fa-at"></i>: zzdkaizz@gmail.com</a
+          >
+          <a href="tel:" class="tel"
+            ><i class="fas fa-phone-alt"></i>: +840215426458</a
+          >
+        </div>
+      </div>
+    </div>
+
+    <div class="modal js-modal">
+      <div class="modal-container js-modalContainer">
+        <div class="model-header">
+          <button id="H-login"><h1 class="dangnhap">Đăng Nhập</h1></button>
+          <button id="H-register"><h1 class="dangky">Đăng Ký</h1></button>
+          <div class="modal-close js-modal-close">
+            <i class="fas fa-times"></i>
+          </div>
+        </div>
+        <div class="model-login">
+          <div class="modal-body">
+            <label for="quatity" class="modal-label">
+              <i class="far fa-user"></i> Tài khoản
+            </label>
+            <input
+              type="text"
+              class="modal-input"
+              id="quatity"
+              placeholder="Tài khoản"
+            />
+
+            <label for="email" class="modal-label">
+              <i class="fas fa-key"></i> Mật khẩu
+            </label>
+            <input
+              type="email"
+              class="modal-input"
+              id="email"
+              placeholder="Mật khẩu"
+            />
+
+            <button id="buy-ticks">Đăng nhập <i class="ti-check"></i></button>
+          </div>
+        </div>
+        <div class="model-Register">
+          <div class="modal-body">
+            <label for="quatity" class="modal-label">
+              <i class="far fa-user"></i> Tài khoản
+            </label>
+            <input
+              type="text"
+              class="modal-input"
+              id="txttaikhoan"
+              placeholder="Tài khoản"
+            />
+
+            <label for="txtpassword" class="modal-label">
+              <i class="fas fa-key"></i> Mật khẩu
+            </label>
+            <input
+              type="password"
+              class="modal-input"
+              id="txtpassword"
+              placeholder="Mật khẩu"
+            />
+            <label for="txtpassword2" class="modal-label">
+              <i class="fas fa-key"></i> Nhập mật khẩu
+            </label>
+            <input
+              type="password"
+              class="modal-input"
+              id="txtpassword2"
+              placeholder="Mật khẩu"
+            />
+
+            <button id="buy-ticks">Đăng nhập <i class="ti-check"></i></button>
+          </div>
+        </div>
+        <div class="modal-footer js-modal-footer">
+          <p class="modal-text js-modal-text">
+            Bạn chưa có tài khoản?
+            <a href="#" class="js-adangky">Đăng ký ngay</a>
+          </p>
+        </div>
+      </div>
+    </div>
+  </body>
+
+  <script src="./assets/js/index.js"></script>
+  <script>
+    // Chống copy
+    function killCopy(e) {
+      return false;
+    }
+    function reEnable() {
+      return true;
+    }
+    document.onselectstart = new Function("return false");
+    if (window.sidebar) {
+      document.onmousedown = killCopy;
+      document.onclick = reEnable;
+    }
+
+    // window.onload = function () {
+    //   document.addEventListener(
+    //     "contextmenu",
+    //     function (e) {
+    //       e.preventDefault();
+    //     },
+    //     false
+    //   );
+    //   document.addEventListener(
+    //     "keydown",
+    //     function (e) {
+    //       //document.onkeydown = function(e) {
+    //       // "I" key
+    //       if (e.ctrlKey && e.shiftKey && e.keyCode == 73) {
+    //         disabledEvent(e);
+    //       }
+    //       // "J" key
+    //       if (e.ctrlKey && e.shiftKey && e.keyCode == 74) {
+    //         disabledEvent(e);
+    //       }
+    //       // "S" key + macOS
+    //       if (
+    //         e.keyCode == 83 &&
+    //         (navigator.platform.match("Mac") ? e.metaKey : e.ctrlKey)
+    //       ) {
+    //         disabledEvent(e);
+    //       }
+    //       // "U" key
+    //       if (e.ctrlKey && e.keyCode == 85) {
+    //         disabledEvent(e);
+    //       }
+    //       // "F12" key
+    //       if (event.keyCode == 123) {
+    //         disabledEvent(e);
+    //       }
+    //     },
+    //     false
+    //   );
+
+    //   function disabledEvent(e) {
+    //     if (e.stopPropagation) {
+    //       e.stopPropagation();
+    //     } else if (window.event) {
+    //       window.event.cancelBubble = true;
+    //     }
+    //     e.preventDefault();
+    //     return false;
+    //   }
+    // };
+    // chống copy
+
+    var header = document.getElementById("header");
+    var btndschuong = document.getElementById("btndschuong");
+    var btnsetting = document.getElementById("btnsetting");
+    var fontchu = document.getElementById("js-font-chu");
+
+    var sochutrongchuong = document.getElementById("sochu");
+
+    const bodytruyen = document.querySelector(".truyen");
+    const ndtruyen = document.querySelector(".ndtruyen");
+    const tenchuong = document.querySelector(".tenchuong");
+    const thongtinchuong = document.querySelector(".thongtinchuong");
+
+    const menutruyen = document.querySelector(".menutruyen");
+    const dvdschuong = document.querySelector(".dvdschuong");
+    const setting = document.querySelector(".setting");
+    const btngiam = document.querySelector(".btngiam");
+    const btntang = document.querySelector(".btntang");
+
+    const ndchuong = document.querySelector(".ndchuong");
+    const fontsize = document.querySelector(".font-size");
+
+    var size = parseInt(fontsize.innerHTML);
+
+    var chuoichu = ndchuong.innerText;
+    var sochu = 0;
+    var arrchu = chuoichu.split(" ");
+    for (var i = 0; i < arrchu.length; i++) {
+      if (arrchu[i].trim() != 0) {
+        sochu++;
+      }
+    }
+
+    sochutrongchuong.innerHTML =
+      '<i class="fas fa-book-open icontt"></i>' + sochu + " chữ";
+
+    const closedsc = document.querySelector(".js-close-dsc");
+    const closesetting = document.querySelector(".js-close-setting");
+
+    const sxtangdan = document.querySelector(".sx-icon1");
+    const sxgiamdan = document.querySelector(".sx-icon2");
+
+    const main = document.querySelector(".main");
+
+    // mở ds chương
+    btndschuong.onclick = function () {
+      dvdschuong.style.display = "block";
+      setting.style.display = "none";
+    };
+
+    // đóng ds chương
+
+    closedsc.onclick = function () {
+      dvdschuong.style.display = "none";
+    };
+
+    // mở setting
+
+    btnsetting.onclick = function () {
+      setting.style.display = "block";
+      dvdschuong.style.display = "none";
+    };
+
+    // đóng setting
+
+    closesetting.onclick = function () {
+      setting.style.display = "none";
+    };
+
+    // tăng fontsize
+
+    btntang.onclick = function () {
+      if (size < 50) {
+        size++;
+        ndchuong.style.fontSize = size + "px";
+        fontsize.innerHTML = size + "px";
+      }
+    };
+
+    // giảm fontsize
+
+    btngiam.onclick = function () {
+      if (size > 10) {
+        size--;
+        ndchuong.style.fontSize = size + "px";
+        fontsize.innerHTML = size + "px";
+      }
+    };
+
+    // đổi font chữ
+
+    fontchu.onchange = function () {
+      ndchuong.style.fontFamily = fontchu.value;
+    };
+
+    // đổi background đọc truyện
+
+    const item1 = document.querySelector(".item1");
+    const item2 = document.querySelector(".item2");
+    const item3 = document.querySelector(".item3");
+    const item4 = document.querySelector(".item4");
+
+    item1.onclick = function () {
+      header.style.backgroundColor = "#ebcaca";
+      bodytruyen.style.backgroundColor = "rgb(155, 155, 155)";
+      ndtruyen.style.backgroundColor = "#f5e4e4";
+      menutruyen.style.backgroundColor = "#f5e4e4";
+
+      ndchuong.style.color = null;
+      tenchuong.style.color = null;
+      thongtinchuong.style.color = null;
+      document.getElementById("tentruyen").style.color = null;
+    };
+
+    item2.onclick = function () {
+      header.style.backgroundColor = "#eae9c9";
+      bodytruyen.style.backgroundColor = "#eae0c3";
+      ndtruyen.style.backgroundColor = "#eae9c9";
+      menutruyen.style.backgroundColor = "#eae9c9";
+
+      ndchuong.style.color = null;
+      tenchuong.style.color = null;
+      thongtinchuong.style.color = null;
+      document.getElementById("tentruyen").style.color = null;
+    };
+
+    item3.onclick = function () {
+      header.style.backgroundColor = null;
+      bodytruyen.style.backgroundColor = "#111";
+      ndtruyen.style.backgroundColor = "#222222";
+      menutruyen.style.backgroundColor = null;
+
+      ndchuong.style.color = "#ccc";
+      tenchuong.style.color = "#ccc";
+      thongtinchuong.style.color = "#ccc";
+      document.getElementById("tentruyen").style.color = "#ccc";
+    };
+
+    item4.onclick = function () {
+      header.style.backgroundColor = null;
+      bodytruyen.style.backgroundColor = null;
+      ndtruyen.style.backgroundColor = null;
+      menutruyen.style.backgroundColor = null;
+
+      ndchuong.style.color = null;
+      tenchuong.style.color = null;
+      thongtinchuong.style.color = null;
+      document.getElementById("tentruyen").style.color = null;
+    };
+
+    sxtangdan.onclick = function () {
+      sxgiamdan.style.display = "block";
+      sxtangdan.style.display = "none";
+    };
+    sxgiamdan.onclick = function () {
+      sxgiamdan.style.display = "none";
+      sxtangdan.style.display = "block";
+    };
+  </script>
+</html>
